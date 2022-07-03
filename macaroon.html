@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="icon" href="..\..\picture\logo.ico" type="image/x-icon" />
+<meta charset=utf-8" >
+<title>马卡龙</title>
+</head>
+
+<style>
+ul, li, h1, h2, h3, p {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    color: #F8999F;
+}
+a {
+    text-decoration: none;
+    color: #7DE38E;
+}
+body {
+    background-position: top;
+    background-size: contain;
+    width: 1000px;
+    margin: 0 auto;
+    line-height: 21px;
+    font-weight: 700;
+}
+.top {
+    width: 1000px;
+    height: 400px;
+}
+.menu li {
+    list-style: none;
+    font-weight: bold;
+    text-decoration: none;
+}
+.menu ul li a:hover {
+    background: #F8999F;
+    transition: .5s;
+}
+.logo {
+    position: absolute;
+    top: 50px;
+    width: 250px;
+    height: 100px;
+    margin-left: 40px;
+}
+.banner {
+    position: relative;
+    height: 250px;
+}
+.menu {
+    width: 100%;
+    text-align: center;
+    float: left;
+}
+.menu li a {
+    background: #A499F3;
+    border: #fff solid 1px;
+    padding: 5px;
+    color: #7DE38E;
+}
+.menu li {
+    float: left;
+    padding: 15px 30px;
+    width: 100px;
+}
+.right {
+    float: right;
+    width: 460px;
+    padding: 20px;
+}
+.left {
+    min-height: 250px;
+    float: left;
+    width: 460px;
+    padding: 20px;
+}
+.content {
+    background-color: beige;
+    font-size: 14px;
+    display: inline-block;
+    width: 100%;
+}
+.pics li {
+    float: left;/**/
+}
+.end {
+    clear: both;
+    background: #FAE8E6;
+    color: #FFFFFF;
+    padding: 30px 0;
+    text-align: center;
+}
+.produce img {
+    margin: 0 20px 20px 0;
+}
+.produce {
+}
+.pad {
+    padding: 20px;
+    display: block;
+    background-color: #C4BFE1;
+}
+.pics p {
+    margin: 2px;
+    text-align: center;
+}
+.mar {
+    margin: 5px 0;
+}
+.imglist {
+    width: 840px;
+    margin: 0 auto;
+}
+.imglist li {
+    float: left;
+    width: 400px;
+    margin: 10px;
+    text-align: center;
+}
+.scrollleft {
+    margin: 0 30px;
+}
+.news li {
+    padding: 5px;
+}
+.title {
+    text-align: center;
+    color: #F00;
+    padding: 10px;
+}
+.fl {
+    float: left;
+}
+.msg > div {
+    padding: 10px;
+}
+.bar {
+    border: #7766EE solid 2px;
+    margin: 20px;
+    clear: both;
+    text-align: center;
+    color: #F46B73;
+    padding: 5px;
+}
+.focus {
+    position: relative;
+    width: 470px;
+    height: 250px;
+    background-color: #C3CBE3;/**/
+    float: left;
+}
+.focus img {
+    width: 470px;
+    height: 250px;
+}
+.focus .shadow .title {
+    width: 260px;
+    height: 65px;
+    padding-left: 30px;
+    padding-top: 20px;
+}
+.focus .shadow .title a {
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: bolder;
+    overflow: hidden;
+}
+.focus .btn {
+    position: absolute;
+    bottom: 34px;
+    left: 510px;
+    overflow: hidden;
+    zoom: 1;
+}
+.focus .btn a {
+    position: relative;
+    display: inline;
+    width: 13px;
+    height: 13px;
+    border-radius: 7px;
+    margin: 0 5px;
+    color: #B0B0B0;
+    font: 12px/15px "\5B8B\4F53";
+    text-decoration: none;
+    text-align: center;
+    outline: 0;
+    float: left;
+    background: #D9D9D9;
+}
+.focus .btn a:hover, .focus .btn a.current {
+    cursor: pointer;
+    background: #fc114a;
+}
+.focus .fPic {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+.focus .D1fBt {
+    overflow: hidden;
+    zoom: 1;
+    height: 16px;
+    z-index: 10;
+}
+.focus .shadow {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0px;
+    z-index: 10;
+    height: 80px;
+    line-height: 80px;
+    background: rgba(0, 0, 0, 0.6);
+filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0, startColorstr='#80000000', endColorstr='#80000000')\9;
+    display: block;
+    text-align: left;
+}
+.focus .shadow a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    overflow: hidden;
+    margin-left: 10px;
+    font-family: "\5FAE\8F6F\96C5\9ED1";
+}
+.focus .fcon {
+    position: relative;
+    width: 100%;
+    float: left;
+    display: none;
+    background: #000;
+}
+.focus .fcon img {
+    display: block;
+}
+.focus .fbg {
+    bottom: 25px;
+    right: 40px;
+    position: absolute;
+    height: 21px;
+    text-align: center;
+    z-index: 200;
+}
+.focus .fbg div {
+    margin: 4px auto 0;
+    overflow: hidden;
+    zoom: 1;
+    height: 14px;
+}
+.focus .D1fBt a {
+    position: relative;
+    display: inline;
+    width: 12px;
+    height: 12px;
+    border-radius: 7px;
+    margin: 0 5px;
+    color: #B0B0B0;
+    font: 12px/15px "\5B8B\4F53";
+    text-decoration: none;
+    text-align: center;
+    outline: 0;
+    float: left;
+    background: #D9D9D9;
+}
+.focus .D1fBt .current, .focus .D1fBt a:hover {
+    background: #fc114a;
+}
+.focus .D1fBt img {
+    display: none;
+}
+.focus .D1fBt i {
+    display: none;
+    font-style: normal;
+}
+.focus .prev, .focus .next {
+    position: absolute;
+    width: 40px;
+    height: 74px;
+    background: url(../images/focus_btn.png) no-repeat;
+}
+.focus .prev {
+    top: 50%;
+    margin-top: -37px;
+    left: 0;
+    background-position: 0 -74px;
+    cursor: pointer;
+}
+.focus .next {
+    top: 50%;
+    margin-top: -37px;
+    right: 0;
+    background-position: -40px -74px;
+    cursor: pointer;
+}
+.focus .prev:hover {
+    background-position: 0 0;
+}
+.focus .next:hover {
+    background-position: -40px 0;
+}
+</style>
+<body>
+<img class="top" src="..\..\picture\allpage.jpg" alt="allpage"/>
+<div class="menu">
+  <ul class="center">
+    <li></li>
+    <li><a href="..\..\index.html">网站首页</a></li>
+    <li><a href="..\thirdcontent\mousse.html">&nbsp&nbsp慕&nbsp&nbsp斯&nbsp&nbsp</a></li>
+    <li><a href="..\thirdcontent\macaroon.html">&nbsp马&nbsp卡&nbsp龙&nbsp</a></li>
+    <li><a href="..\thirdcontent\tiramisu.html">提拉米苏</a></li>
+  </ul>
+</div>
+<div class="content">
+  <div class="bar">详细做法</div>
+  <div class="content">
+    <div class="left">
+      <div class="pics">
+        <div id="fsD1" class="focus">
+          <div id="D1pic1" class="fPic">
+            <div> <img src="..\..\picture\macaroon-1.jpg" alt="caoshi" style="opacity: 1"> </div>
+          </div>
+          </div>
+      </div>
+    </div>
+<div class="right">
+      <h2 class="mar"><em>用料表：</em></h2>
+      <div class="produce">
+        <p><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp①蛋清&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp70克<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp②糖粉&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp80克<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp③砂糖&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp70克<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp④牛奶&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp120克<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⑤酸甜奶粉&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp100克<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⑥玉米淀粉&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp10克<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⑦杏仁粉&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp90克<p>
+&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp⑧黄油&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp200克
+	</h3></p>
+      </div>
+    </div>
+<div class="content">
+    <div class="left">
+      <div class="pics">
+        <div id="fsD1" class="focus">
+          <div id="D1pic1" class="fPic">
+            <div> <img src="..\..\picture\macaroon-2.jpg" alt="sesamepaste" style="opacity: 1"> </div>
+          </div>
+          </div>
+      </div>
+    </div>
+<div class="right">
+      <h2 class="mar"><em>做法步骤：</em></h2>
+      <div class="produce">
+        <p><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp准备面包：①杏仁粉、糖粉混合过筛②打发蛋清，砂糖分3次加入（即打发3次）③把①混合的面粉倒入打发好的蛋清，顺时针搅拌均匀④装入裱花袋挤出对应大小的面糊⑤然后静置1小时直到面糊表面干燥⑥约1小时后把面糊放入预热135度的烤箱中烤17分钟⑦然后拿出等待冷却。
+	<h3></p>
+      </div>
+    </div>
+<div class="content">
+    <div class="left">
+      <div class="pics">
+        <div id="fsD1" class="focus">
+          <div id="D1pic1" class="fPic">
+            <div> <img src="..\..\picture\macaroon-3.jpg" alt="sesamepaste" style="opacity: 1"> </div>
+          </div>
+          </div>
+      </div>
+    </div>
+<div class="right">
+      <div class="produce">
+        <p><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp准备夹心：①把牛奶、甜酸奶粉、玉米淀粉倒入锅中小火煮熟并不断搅拌直至浓稠，得到浓缩牛奶②倒出放置直到冷却③再把浓缩牛奶加入打发好的黄油中再次进行打发。
+	<h3></p>
+      </div>
+    </div>
+<div class="content">
+    <div class="left">
+      <div class="pics">
+        <div id="fsD1" class="focus">
+          <div id="D1pic1" class="fPic">
+            <div> <img src="..\..\picture\macaroon-4.jpg" alt="sesamepaste" style="opacity: 1"> </div>
+          </div>
+          </div>
+      </div>
+    </div>
+<div class="right">
+      <div class="produce"><h3><p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp组装阶段：①把夹心顺时针挤到一块马卡龙面包上②再把另一块马卡龙面包盖上即可。
+	<h3></p>
+      </div>
+    </div>
+<div class="content">
+    <div class="left">
+      <div class="pics">
+        <div id="fsD1" class="focus">
+          <div id="D1pic1" class="fPic">
+            <div> <img src="..\..\picture\macaroon.jpg" alt="caoshi" style="opacity: 1"> </div>
+          </div>
+          </div>
+      </div>
+    </div>
+<div class="right">
+      <h2 class="mar"><em>额外细节：</em></h2>
+      <div class="produce">
+        <p><h3>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp①制作马卡龙面包的烘焙时间和温度必须要严格②马卡龙夹心可以在准备夹心的时候加入色素、果汁以形成不同的颜色、味道③每一步的搅拌都要严格按照同一个方向，以免面糊或夹心中进入气泡④挤面糊或夹心时，一般往左或右方向拉断。
+	<h3></p>
+      </div>
+    </div>
+  <div class="end">
+    <p>徐毅 1700836041@qq.com 广东省清远市清城区东城街道广东建设职业技术学院</p>
+  </div>
+</div>
+</body>
+</html>
